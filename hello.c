@@ -1,6 +1,6 @@
 #include <stdio.h>
-void f();
+void _hello();
 
-void f() {
+void _hello() {
 	printf("%s", "Hello world!\n");
 }

@@ -1,5 +1,5 @@
 cdef extern from "hello.c":
-  void f()
+  void _hello()
 	        
-cpdef myf():
-  f()
+cpdef hello():
+  _hello()
