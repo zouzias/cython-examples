@@ -1,4 +1,4 @@
-# cython-example
+# cython-examples
 
 Example using Cypthon
 
