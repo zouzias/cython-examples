@@ -1,6 +1,6 @@
 # cython-examples
 
-Example using Cypthon
+Examples calling C code from Python with the help of Cypthon
 
 
 ## Build module
