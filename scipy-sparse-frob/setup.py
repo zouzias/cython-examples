@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env env/bin/python
 
 from distutils.core import setup
 from distutils.extension import Extension
@@ -8,7 +8,8 @@ import numpy
 
 setup(
     cmdclass = {'build_ext': build_ext},
-    ext_modules = [Extension("csrfrob",
-                             sources=["csrfrob.pyx"],
+    ext_modules = [Extension("sparsefrob",
+                             extra_compile_args=['-O3'],
+                             sources=["sparsefrob.pyx"],
                              include_dirs=[numpy.get_include()])],
 )
