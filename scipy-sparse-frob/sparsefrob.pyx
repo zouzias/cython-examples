@@ -1,7 +1,7 @@
 """
 sparsefrob.pyx
 
-Computes the Frobenius norm over a sparse matrix (scipy)
+Computes the Frobenius norm over a Scipy CSR, CSC or COO sparse matrix
 
 """
 
@@ -10,6 +10,7 @@ import cython
 # import both numpy and the Cython declarations for numpy
 import numpy as np
 cimport numpy as np
+import math
 from scipy.sparse import csr_matrix
 from scipy.sparse import csc_matrix
 from scipy.sparse import coo_matrix
@@ -22,7 +23,7 @@ cdef iter_over_sparse_matrix(A):
     for item in A.data:
         frob += item * item
 
-    return frob
+    return math.sqrt(frob)
 
 @cython.boundscheck(False)
 @cython.wraparound(False)

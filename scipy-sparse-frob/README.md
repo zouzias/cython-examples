@@ -8,11 +8,13 @@ Start a virtual enviroment called `env`
 
 ```
 virtualenv env
+source env/bin/activate
 ```
 
 Then, type
 
 ```
+./cleanup.sh
 ./build-module.sh
 ./test.py
 ```
