@@ -1,0 +1,6 @@
+sparsefrob.c
+*.so
+dot.c
+
+build/
+.cache/
