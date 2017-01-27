@@ -1,11 +1,16 @@
 # cython-examples
 
-Examples calling C code from Python with the help of Cypthon
+Examples calling C code from Python with the help of Cypthon.
+
+* dot: Inner product between two vectors
+* multiply: scale vector by constant
+* scipy-sparse-frob: Frobenius norm of sparse matrices (SciPy)
 
 
 ## Build module
 
 ```
+cd hello-world
 ./build-module.sh
 ```
 
