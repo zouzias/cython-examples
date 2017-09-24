@@ -5,6 +5,6 @@ python:
   - "3.6"
 cache: pip
 install:
-  - cd hello-world && pip install cython pytest
+  - pushd hello-world && pip install cython pytest && popd
 script:
-  - cd hello-world && py.test --cov-report term-missing --cov app -v
+  - pushd hello-world && py.test --cov-report term-missing --cov app -v
