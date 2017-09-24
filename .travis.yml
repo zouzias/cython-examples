@@ -5,8 +5,8 @@ python:
   - "3.6"
 cache: pip
 install:
-  - pushd hello-world && pip install cython pytest && ./build-module.sh && popd
-  - pushd dot && pip install cython pytest && ./build-module.sh && popd
+  - cd hello-world && pip install cython pytest && ./build-module.sh && cd ..
+  - cd dot && pip install cython pytest && ./build-module.sh && cd ..
 script:
-  - pushd hello-world && py.test && popd
-  - pushd dot && py.test && popd
+  - cd hello-world && py.test && cd ..
+  - cd dot && py.test && cd ..
