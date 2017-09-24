@@ -38,7 +38,7 @@ def multiply(np.ndarray[double, ndim=2, mode="c"] input not None, double value):
 
 def multiply2(np.ndarray[double, ndim=2, mode="c"] input not None, double value):
     """
-    this method works fine, but is not as future-proof the nupy API might change, etc.
+    this method works fine, but is not as future-proof the numpy API might change, etc.
     """
     cdef int m, n
 
