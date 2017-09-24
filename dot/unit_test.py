@@ -14,4 +14,4 @@ def test_basic():
     b = np.random.rand(12)
     dot = mydot.dot(a, b)
     expectedDot = np.dot(a,b)
-    assert dot == expectedDot
+    assert np.abs(dot - expectedDot) < 10e-3
