@@ -7,4 +7,4 @@ cache: pip
 install:
   - pushd hello-world && pip install cython pytest && popd
 script:
-  - pushd hello-world && py.test --cov-report term-missing --cov app -v
+  - pushd hello-world && py.test && popd
