@@ -8,8 +8,11 @@ install:
   - pip install cython pytest
   - cd dot && ./build-module.sh && cd ..
   - cd multiply && ./build-module.sh && cd ..
+  - cd scipy-sparse-frob && ./build-module.sh && cd ..
 script:
   - cd dot
   - py.test
   - cd ../multiply
+  - py.test
+  - cd ../scipy-sparse-frob
   - py.test
