@@ -5,7 +5,7 @@ python:
   - "3.6"
 cache: pip
 install:
-  - pip install cython pytest
+  - pip install cython pytest scipy numpy
   - cd dot && ./build-module.sh && cd ..
   - cd multiply && ./build-module.sh && cd ..
   - cd scipy-sparse-frob && ./build-module.sh && cd ..
