@@ -2,9 +2,10 @@
 
 Examples calling C code from Python via Cython.
 
+* hello-world: Hello world example
 * dot: Inner product between two vectors
-* multiply: scale vector by a given constant
-* scipy-sparse-frob: Frobenius norm of sparse matrices (SciPy)
+* multiply: Scale vector by a given constant
+* scipy-sparse-frob: Frobenius norm of SciPy sparse matrices
 
 ## Build module
 
@@ -13,7 +14,7 @@ cd hello-world
 ./build-module.sh
 ```
 
-You may need to install cython, i.e., `pip install cython` or `pip3`
+You may need to install cython, i.e., `pip install cython scipy` or `pip3`
 
 ## Run module
 
