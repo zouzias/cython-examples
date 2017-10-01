@@ -7,6 +7,9 @@ cache: pip
 install:
   - pip install cython pytest
   - cd dot && ./build-module.sh && cd ..
+  - cd multiply && ./build-module.sh && cd ..
 script:
   - cd dot
+  - py.test
+  - cd ../multiply
   - py.test
